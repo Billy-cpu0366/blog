@@ -96,9 +96,16 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: meow
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# Search
+search:
+  path: search.xml  # 或者 search.json，具体看主题文档或插件文档的要求
+  field: post     # 搜索范围：post, page, all
+  format: html    # 内容格式：html, striptags, raw
+  limit: 10000    # 最大结果数
